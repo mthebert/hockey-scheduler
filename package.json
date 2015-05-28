@@ -1,15 +1,21 @@
 {
   "name": "hockey-scheduler",
   "version": "1.0.0",
-  "description": "",
+  "description": "hockey team scheduling assistant",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mthebert/hockey-scheduler.git"
+  },
   "scripts": {
+    "start": "node ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "matt@thebert.com",
   "license": "ISC",
   "dependencies": {
+    "boom": "^2.7.2",
     "hapi": "^8.5.1",
-    "mongoose": "^4.0.3"
+    "hapi-mongodb": "^3.0.0"
   }
 }

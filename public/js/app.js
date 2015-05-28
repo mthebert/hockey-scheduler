@@ -1,6 +1,6 @@
 'use strict';
 var hockeyScheduler = angular.module('hockeyScheduler', ['ngResource'])
 	.config(['$routeProvider', function($routeProvider) {
-	  $routeProvider.when('/Home', {templateUrl: 'partials/Home.html', controller: 'HomeController'});
-	  $routeProvider.otherwise({redirectTo: '/Home'});
+	  $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'homeController'});
+	  $routeProvider.otherwise({redirectTo: '/home'});
 	}]);
