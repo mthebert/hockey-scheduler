@@ -1,5 +1,3 @@
-'use strict';
-
-function homeController ($scope) {
-
-}
+hockeyScheduler.controller('homeController', function ($scope) {
+  // blank controller
+});

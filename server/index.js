@@ -1,34 +1,16 @@
-var Hapi = require('hapi');
+var Bcrypt = require('Bcrypt-nodejs');
+var BodyParser = require('body-parser');
 var Boom = require("boom");
+var Hapi = require('hapi');
+var Mongoose = require('mongoose');
+var Morgan = require('morgan');
+var Schema = Mongoose.Schema;
 
-var dbOpts = {
-    "url": "mongodb://localhost:27017/hockeyScheduler",
-    "settings": {
-        "db": {
-            "native_parser": false
-        }
-    }
-};
+Mongoose.connect('mongodb://localhost/hockey_scheduler');
 
 var server = new Hapi.Server();
 server.connection({ 
     port: 8000 
-});
-
-server.register({
-    register: require('hapi-mongodb'),
-    options: dbOpts
-}, function (err) {
-    if (err) {
-        console.error(err);
-        throw err;
-    }
-});
-
-server.route( {
-    "method"  : "GET",
-    "path"    : "/users/{id}",
-    "handler" : usersHandler
 });
 
 server.route({
@@ -45,7 +27,3 @@ server.route({
 server.start(function () {
     console.log('Server running at:', server.info.uri);
 });
-
-function usersHandler(request, reply) {
-	
-}
