@@ -19,5 +19,6 @@ Functionality - just a skeleton now.  More documentation will follow
 Revisions:  
 5/26/2015 - started the app skeleton with the MEAN stack, dropping express for hapi.  Add bootstrap and jquery.
 5/27/2015 - flushing out the angular skeleton, make the git repository
+5/28/2015 - Themed out the bootstrap for initial design
 
 to run - npm start
