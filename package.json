@@ -2,12 +2,13 @@
   "name": "hockey-scheduler",
   "version": "1.0.0",
   "description": "hockey team scheduling assistant",
-  "main": "index.js",
+  "main": "server/server.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/mthebert/hockey-scheduler.git"
   },
   "scripts": {
+    "restart": "nodemon ./server/server.js",
     "start": "node ./server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +17,9 @@
   "dependencies": {
     "boom": "^2.7.2",
     "crypto": "0.0.3",
+    "good": "^6.1.4",
+    "good-console": "^5.0.1",
+    "good-file": "^5.0.1",
     "hapi": "^8.5.1",
     "hapi-auth-jwt": "^2.1.2",
     "joi": "^6.4.3",
