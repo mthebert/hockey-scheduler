@@ -8,15 +8,21 @@
     "url": "https://github.com/mthebert/hockey-scheduler.git"
   },
   "scripts": {
-    "start": "node ./server/index.js",
+    "start": "node ./server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "matt@thebert.com",
   "license": "MIT",
   "dependencies": {
     "boom": "^2.7.2",
+    "crypto": "0.0.3",
     "hapi": "^8.5.1",
+    "hapi-auth-jwt": "^2.1.2",
     "joi": "^6.4.3",
-    "mongoose": "^4.0.3"
+    "jsonwebtoken": "^5.0.1",
+    "moment": "^2.10.3",
+    "mongoose": "^4.0.3",
+    "mongoose-auto-increment": "^4.0.0",
+    "nodemailer": "^1.3.4"
   }
 }
