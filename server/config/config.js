@@ -1,7 +1,7 @@
 module.exports = {
     server: {
-        host: 'localhost',
-        port: 8000,
+        host: process.env.HOST || 'localhost',
+        port: process.env.PORT  || 8000,
         good: {
             options: {
                 reporters: [{
