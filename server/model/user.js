@@ -5,11 +5,6 @@ var mongoose = require('mongoose'),
 
 autoIncrement.initialize(db);
 
-/**
- * @module  User
- * @description contain the details of Attribute
- */
-
 var User = new Schema({
 
     /** 
@@ -68,6 +63,10 @@ User.statics.findUser = function(userName, callback) {
     }, callback);
 };
 
+User.statics.getAll = function(callback) {
+    user.find({}, callback);
+};
+
 User.statics.findUserByIdAndUserName = function(id, userName, callback) {
     this.findOne({
         userName: userName,
@@ -76,7 +75,6 @@ User.statics.findUserByIdAndUserName = function(id, userName, callback) {
 };
 
 var user = mongoose.model('user', User);
-
 /** export schema */
 module.exports = {
     User: user

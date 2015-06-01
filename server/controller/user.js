@@ -105,7 +105,17 @@ exports.resendVerificationEmail = {
         });
     }
 };
-
+exports.getAll = {
+    handler: function(request, reply){
+        User.find({}, function(err, user) {
+            if (!err) {
+                reply(user);
+            } else {
+                reply(Boom.badImplementation(err)); // 500 error
+            }
+        });
+    }
+}
 exports.forgotPassword = {
     validate: {
         payload: {

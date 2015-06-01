@@ -17,10 +17,10 @@ module.exports = {
     },
     database: {
         db: 'hockey_scheduler',
-        host: 'localhost',
-        port: 27017,
-        username: '',
-        password: ''
+        host: 'ds043022.mongolab.com:43022',
+        port: 43022,
+        username: 'hockeyuser',
+        password: 'hockeypass'
     },
     key: {
         privateKey: '37LvDSm4XvjYOh9Y',
