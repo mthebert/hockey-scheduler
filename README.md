@@ -19,6 +19,8 @@ Hapi - http://hapijs.com/
 		Good-console - https://github.com/hapijs/good-console
 		Good-file - https://github.com/hapijs/good-file
 	Hapi-Auth-JWT - https://github.com/ryanfitz/hapi-auth-jwt
+Heroku - https://heroku.com
+	Heroku Toolbelt - https://toolbelt.heroku.com/
 HTML/HTML5 - http://www.w3schools.com/html/
 	HTML5 Shiv - http://www.paulirish.com/2011/the-history-of-the-html5-shiv/
 JavaScript - http://www.w3schools.com/js/
@@ -28,6 +30,7 @@ JQuery UI - https://jqueryui.com/
 JSON Web Token (JWT) - http://jwt.io/
 Moment - http://momentjs.com/
 MongoDB - https://www.mongodb.org/
+MongoLab - https://mongolab.com
 Mongoose - http://mongoosejs.com/
 	Mongoose Auto-Increment - https://www.npmjs.com/package/mongoose-auto-increment
 NodeJS - https://nodejs.org/
@@ -46,3 +49,6 @@ Revisions:
 5/28/2015 - Themed out the bootstrap for initial design, started on the API
 5/29/2015 - More API, some reorg of server files, jwt auth, logging using hapi good
 to run - npm start
+6/1/2015 - added Heroku and mongolab
+
+https://hockey-scheduler.herokuapp.com
